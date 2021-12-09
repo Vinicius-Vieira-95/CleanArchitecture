@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CleanArch.Application
+namespace CleanArch.Service
 {
     public class Class1
     {
