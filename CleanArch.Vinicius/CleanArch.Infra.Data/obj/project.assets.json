@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "CleanArch.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/CleanArch.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArch.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CleanArch.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CleanArch.Domain/CleanArch.Domain.csproj",
+      "msbuildProject": "../CleanArch.Domain/CleanArch.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "CleanArch.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Pichau\\.nuget\\packages\\": {},
@@ -40,7 +59,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Pichau\\Desktop\\Treino\\CleanArchitecture\\CleanArch.Vinicius\\CleanArch.Domain\\CleanArch.Domain.csproj": {
+              "projectPath": "C:\\Users\\Pichau\\Desktop\\Treino\\CleanArchitecture\\CleanArch.Vinicius\\CleanArch.Domain\\CleanArch.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,0 +1,17 @@
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Service\bin\Debug\net5.0\CleanArch.Service.deps.json
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Service\bin\Debug\net5.0\CleanArch.Service.dll
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Service\bin\Debug\net5.0\ref\CleanArch.Service.dll
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Service\bin\Debug\net5.0\CleanArch.Service.pdb
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Service\bin\Debug\net5.0\CleanArch.Domain.dll
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Service\bin\Debug\net5.0\CleanArch.Infra.Data.dll
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Service\bin\Debug\net5.0\CleanArch.Domain.pdb
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Service\bin\Debug\net5.0\CleanArch.Infra.Data.pdb
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Service\obj\Debug\net5.0\CleanArch.Service.csproj.AssemblyReference.cache
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Service\obj\Debug\net5.0\CleanArch.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Service\obj\Debug\net5.0\CleanArch.Service.AssemblyInfoInputs.cache
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Service\obj\Debug\net5.0\CleanArch.Service.AssemblyInfo.cs
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Service\obj\Debug\net5.0\CleanArch.Service.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Service\obj\Debug\net5.0\CleanArch.Service.csproj.CopyComplete
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Service\obj\Debug\net5.0\CleanArch.Service.dll
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Service\obj\Debug\net5.0\ref\CleanArch.Service.dll
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Service\obj\Debug\net5.0\CleanArch.Service.pdb

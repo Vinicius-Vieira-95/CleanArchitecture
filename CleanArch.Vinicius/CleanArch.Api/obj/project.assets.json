@@ -75,6 +75,43 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "CleanArch.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/CleanArch.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArch.Domain.dll": {}
+        }
+      },
+      "CleanArch.Infra.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CleanArch.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CleanArch.Infra.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArch.Infra.Data.dll": {}
+        }
+      },
+      "CleanArch.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CleanArch.Domain": "1.0.0",
+          "CleanArch.Infra.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CleanArch.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArch.Service.dll": {}
+        }
       }
     }
   },
@@ -185,10 +222,27 @@
         "swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "CleanArch.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CleanArch.Domain/CleanArch.Domain.csproj",
+      "msbuildProject": "../CleanArch.Domain/CleanArch.Domain.csproj"
+    },
+    "CleanArch.Infra.Data/1.0.0": {
+      "type": "project",
+      "path": "../CleanArch.Infra.Data/CleanArch.Infra.Data.csproj",
+      "msbuildProject": "../CleanArch.Infra.Data/CleanArch.Infra.Data.csproj"
+    },
+    "CleanArch.Service/1.0.0": {
+      "type": "project",
+      "path": "../CleanArch.Service/CleanArch.Service.csproj",
+      "msbuildProject": "../CleanArch.Service/CleanArch.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "CleanArch.Domain >= 1.0.0",
+      "CleanArch.Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -225,7 +279,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Pichau\\Desktop\\Treino\\CleanArchitecture\\CleanArch.Vinicius\\CleanArch.Domain\\CleanArch.Domain.csproj": {
+              "projectPath": "C:\\Users\\Pichau\\Desktop\\Treino\\CleanArchitecture\\CleanArch.Vinicius\\CleanArch.Domain\\CleanArch.Domain.csproj"
+            },
+            "C:\\Users\\Pichau\\Desktop\\Treino\\CleanArchitecture\\CleanArch.Vinicius\\CleanArch.Service\\CleanArch.Service.csproj": {
+              "projectPath": "C:\\Users\\Pichau\\Desktop\\Treino\\CleanArchitecture\\CleanArch.Vinicius\\CleanArch.Service\\CleanArch.Service.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
