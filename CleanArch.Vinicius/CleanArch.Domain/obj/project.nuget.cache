@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "KCfaskw7O2GsUO1B1mieMD7TCxi2E114jMFSn5JTEzM+K6h7eSwJh9m6nJWz9UoK5Z7TOl4LT5oHTHRncvvGkA==",
+  "dgSpecHash": "zQVE938CPRgTkubrxTkUqaonO347c+ODI1s7K6ayPLZH5gUa97vNW2P90AdfKrFa8YI4aYX3WLavmdaOwnA/ww==",
   "success": true,
   "projectFilePath": "C:\\Users\\Pichau\\Desktop\\Treino\\CleanArchitecture\\CleanArch.Vinicius\\CleanArch.Domain\\CleanArch.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Pichau\\.nuget\\packages\\fluentvalidation\\10.3.5\\fluentvalidation.10.3.5.nupkg.sha512",
+    "C:\\Users\\Pichau\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.5\\fluentvalidation.aspnetcore.10.3.5.nupkg.sha512",
+    "C:\\Users\\Pichau\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.5\\fluentvalidation.dependencyinjectionextensions.10.3.5.nupkg.sha512",
+    "C:\\Users\\Pichau\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
