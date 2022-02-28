@@ -15,7 +15,6 @@ namespace CleanArch.Domain.Validation
                 .MaximumLength(60)
                 .NotEmpty()
                 .NotNull();
-                
         }
     }
 }

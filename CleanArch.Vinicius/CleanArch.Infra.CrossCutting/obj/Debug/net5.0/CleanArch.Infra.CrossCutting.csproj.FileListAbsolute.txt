@@ -1,0 +1,12 @@
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.CrossCutting\bin\Debug\net5.0\CleanArch.Infra.CrossCutting.deps.json
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.CrossCutting\bin\Debug\net5.0\CleanArch.Infra.CrossCutting.dll
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.CrossCutting\bin\Debug\net5.0\ref\CleanArch.Infra.CrossCutting.dll
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.CrossCutting\bin\Debug\net5.0\CleanArch.Infra.CrossCutting.pdb
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.CrossCutting\obj\Debug\net5.0\CleanArch.Infra.CrossCutting.csproj.AssemblyReference.cache
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.CrossCutting\obj\Debug\net5.0\CleanArch.Infra.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.CrossCutting\obj\Debug\net5.0\CleanArch.Infra.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.CrossCutting\obj\Debug\net5.0\CleanArch.Infra.CrossCutting.AssemblyInfo.cs
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.CrossCutting\obj\Debug\net5.0\CleanArch.Infra.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.CrossCutting\obj\Debug\net5.0\CleanArch.Infra.CrossCutting.dll
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.CrossCutting\obj\Debug\net5.0\ref\CleanArch.Infra.CrossCutting.dll
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.CrossCutting\obj\Debug\net5.0\CleanArch.Infra.CrossCutting.pdb

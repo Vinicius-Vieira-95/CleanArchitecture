@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "3yhYpgNWl+jwO8GtBWjgQF/kq/DrHa5robnfCwm5R44ElaIaIZDPZ/BZzVNpW57L9qXSAjNV0gBkBaIfb+9Mzg==",
+  "dgSpecHash": "uQ8SZD6zxyKFAkc+HUlE5wNV1TQtCXKh/WUXFbt9BlEeZSik1uXzx/EPt9YyPY8LymtKlNYgAq86iDNDWmr/Rg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Pichau\\Desktop\\Treino\\CleanArchitecture\\CleanArch.Vinicius\\CleanArch.Infra.CrossCutting\\CleanArch.Infra.CrossCutting.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Pichau\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Pichau\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Pichau\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

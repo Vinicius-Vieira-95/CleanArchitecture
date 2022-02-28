@@ -1,4 +1,6 @@
 C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.Data\bin\Debug\net5.0\CleanArch.Infra.Data.deps.json
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.Data\bin\Debug\net5.0\CleanArch.Infra.Data.runtimeconfig.json
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.Data\bin\Debug\net5.0\CleanArch.Infra.Data.runtimeconfig.dev.json
 C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.Data\bin\Debug\net5.0\CleanArch.Infra.Data.dll
 C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.Data\bin\Debug\net5.0\ref\CleanArch.Infra.Data.dll
 C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.Data\bin\Debug\net5.0\CleanArch.Infra.Data.pdb
@@ -13,3 +15,4 @@ C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.In
 C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.Data\obj\Debug\net5.0\CleanArch.Infra.Data.dll
 C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.Data\obj\Debug\net5.0\ref\CleanArch.Infra.Data.dll
 C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.Data\obj\Debug\net5.0\CleanArch.Infra.Data.pdb
+C:\Users\Pichau\Desktop\Treino\CleanArchitecture\CleanArch.Vinicius\CleanArch.Infra.Data\obj\Debug\net5.0\CleanArch.Infra.Data.genruntimeconfig.cache

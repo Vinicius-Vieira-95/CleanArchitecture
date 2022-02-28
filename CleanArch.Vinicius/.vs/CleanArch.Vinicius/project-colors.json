@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d156cfaf-32af-4d5b-a278-2fbed3794b47": {
+      "ProjectGuid": "d156cfaf-32af-4d5b-a278-2fbed3794b47",
+      "DisplayName": "CleanArch.Domain",
+      "ColorIndex": 0
+    },
+    "0d80f798-1638-4aee-911d-2c58a4369ade": {
+      "ProjectGuid": "0d80f798-1638-4aee-911d-2c58a4369ade",
+      "DisplayName": "CleanArch.Api",
+      "ColorIndex": 1
+    },
+    "b70dec3f-6284-4899-b57b-a1851e643a97": {
+      "ProjectGuid": "b70dec3f-6284-4899-b57b-a1851e643a97",
+      "DisplayName": "CleanArch.Infra.Data",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

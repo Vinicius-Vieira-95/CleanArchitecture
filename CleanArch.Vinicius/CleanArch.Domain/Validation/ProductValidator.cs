@@ -14,7 +14,7 @@ namespace CleanArch.Domain.Validation
             RuleFor(p => p.Name)
                 .MinimumLength(2)
                 .MaximumLength(60)
-                .NotNull().WithMessage("Nome não pode ser nullo")
+                .NotNull().WithMessage("Nome não pode ser nulo")
                 .Empty().WithMessage("Um nome tem que exitir");
 
             RuleFor(p => p.Price)
