@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using CleanArch.Domain.DTOs;
 using FluentValidation;
+using System;
 
 namespace CleanArch.Service.services
 {
@@ -28,16 +29,28 @@ namespace CleanArch.Service.services
             return new CategoryDto (await _repository.GetByIdAsync(category.Id));
         }
 
-        public async Task<List<Category>> GetAllAsync()
+        public async Task<List<CategoryDto>> GetAllAsync()
         {
             var categoriesList = await _repository.GetAllAsync();
-            return categoriesList;
+            //List<CategoryDto> result = new List<CategoryDto>();
+            //foreach (var category in categoriesList)
+            //{
+            //    result.Add (new CategoryDto (category));
+            //}
+
+            var list = categoriesList.ConvertAll(new Converter<Category, CategoryDto>(CategoryToCategoryDto));
+            return list;
+        }
+
+        private CategoryDto CategoryToCategoryDto(Category cat)
+        {
+            return new CategoryDto(cat);
         }
 
         public async Task<Category> GetByIdAsync(int? id)
         {
-           var category = await _repository.GetByIdAsync(id);
-           return category;
+            var category = await _repository.GetByIdAsync(id);
+            return category;
         }
 
         public async Task<Category> Remove(int? category)
