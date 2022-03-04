@@ -1,15 +1,19 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using CleanArch.Domain.DTOs;
 using CleanArch.Domain.Entities;
+using FluentValidation;
 
 namespace CleanArch.Domain.Interface
 {
     public interface ICategoryService
     {
-         Task<IEnumerable<Category>> GetAllAsync();
-         Task<Category> GetByIdAsync(int? id);
-         Task<Category> Create(Category category);
-         Task<Category> Update(Category category);
-         Task<Category> Remove(Category category);
+         public Task<List<Category>> GetAllAsync();
+         public Task<Category> GetByIdAsync(int? id);
+         public Task<CategoryDto> Create<TInputModel, TValidator>(TInputModel model)
+            where TInputModel: class
+            where TValidator : AbstractValidator<Category>;
+         public Task<Category> Update(int? category);
+         public Task<Category> Remove(int? category);
     }
 }

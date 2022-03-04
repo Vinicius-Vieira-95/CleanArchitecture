@@ -2,8 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using CleanArch.Api.Models;
+using CleanArch.Domain.Entities;
+using CleanArch.Domain.Interface;
 using CleanArch.Domain.Validation;
 using CleanArch.Infra.Data.Banco;
+using CleanArch.Infra.Data.Repositories;
+using CleanArch.Service.services;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -43,7 +49,15 @@ namespace CleanArch.Api
                     x.RegisterValidatorsFromAssemblyContaining<ProductValidator>();
                 });
 
-            services.AddControllers();
+            services.AddSingleton(new MapperConfiguration(config =>
+            {
+                config.CreateMap<Category, CategoryModel>();
+                config.CreateMap<CategoryModel, Category>();
+            }).CreateMapper());
+
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<ICategoryService, CategoryService>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CleanArch.Api", Version = "v1" });

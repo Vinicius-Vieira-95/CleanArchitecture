@@ -1,6 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CleanArch.Domain\CleanArch.Domain.csproj" />
     <ProjectReference Include="..\CleanArch.Infra.Data\CleanArch.Infra.Data.csproj" />
   </ItemGroup>

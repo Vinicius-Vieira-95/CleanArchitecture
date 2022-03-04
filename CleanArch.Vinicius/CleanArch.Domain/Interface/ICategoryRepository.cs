@@ -6,7 +6,7 @@ namespace CleanArch.Domain.Interface
 {
     public interface ICategoryRepository
     {
-        public Task<IEnumerable<Category>> GetAllAsync();
+        public Task<List<Category>> GetAllAsync();
         public Task<Category> GetByIdAsync(int? id);
         public Task<Category> Create(Category category);
         public Task<Category> Update(Category category);
