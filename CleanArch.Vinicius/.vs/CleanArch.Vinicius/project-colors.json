@@ -15,7 +15,17 @@
       "ProjectGuid": "b70dec3f-6284-4899-b57b-a1851e643a97",
       "DisplayName": "CleanArch.Infra.Data",
       "ColorIndex": 2
+    },
+    "c34d4b41-0d5c-4a90-b849-e26777d2e398": {
+      "ProjectGuid": "c34d4b41-0d5c-4a90-b849-e26777d2e398",
+      "DisplayName": "CleanArch.Infra.CrossCutting",
+      "ColorIndex": 3
+    },
+    "815e3612-3a83-45c3-bd90-f93a3c8b8ab8": {
+      "ProjectGuid": "815e3612-3a83-45c3-bd90-f93a3c8b8ab8",
+      "DisplayName": "CleanArch.Service",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 5
 }

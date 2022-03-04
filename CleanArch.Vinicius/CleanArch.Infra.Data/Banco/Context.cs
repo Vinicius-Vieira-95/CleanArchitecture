@@ -14,7 +14,7 @@ namespace CleanArch.Infra.Data.Banco
         {
         }
 
-        DbSet<Category> Categories { get; set; }
-        DbSet<Product> Products { get; set;}
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set;}
     }
 }
