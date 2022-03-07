@@ -7,12 +7,10 @@ namespace CleanArch.Domain.Validation
     {
         public CategoryValidator()
         {
-            RuleFor( c => c.Id)
-                .LessThan(0).WithMessage("Id não pode ser negativo");
 
             RuleFor(c => c.Name)
-                .MinimumLength(3)
-                .MaximumLength(60)
+                .MinimumLength(3).WithMessage("Nome pode ter no minimo 3 caracteres")
+                .MaximumLength(60).WithMessage("Nome pode conter no maximo 60 caracteres")
                 .NotEmpty()
                 .NotNull();
         }

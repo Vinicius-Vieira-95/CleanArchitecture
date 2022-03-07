@@ -9,10 +9,9 @@ namespace CleanArch.Domain.Interface
     public interface ICategoryService
     {
          public Task<List<CategoryDto>> GetAllAsync();
-         public Task<Category> GetByIdAsync(int? id);
-         public Task<CategoryDto> Create<TInputModel, TValidator>(TInputModel model)
-            where TInputModel: class
-            where TValidator : AbstractValidator<Category>;
+         public Task<CategoryDto> GetByIdAsync(int? id);
+         public Task Create<TInputModel>(TInputModel model)
+            where TInputModel : class;
          public Task<Category> Update(int? category);
          public Task<Category> Remove(int? category);
     }

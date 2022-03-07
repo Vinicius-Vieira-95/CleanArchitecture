@@ -22,8 +22,8 @@ namespace CleanArch.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] CategoryModel cat)
         {
-            var result = await _service.Create<CategoryModel, CategoryValidator>(cat);
-            return Ok(result);
+            await _service.Create(cat);
+            return Ok();
         }
 
         [HttpGet]

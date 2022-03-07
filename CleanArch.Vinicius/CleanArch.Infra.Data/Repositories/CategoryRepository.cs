@@ -18,12 +18,10 @@ namespace CleanArch.Infra.Data.Repositories
             _context = context;
         }
 
-        public async Task<Category> Create(Category category)
+        public async Task Create(Category category)
         {
-            var cat = await _context.Categories.AddAsync(category);
-            _context.SaveChanges();
-            Console.WriteLine(cat);
-            return null;
+            await _context.Categories.AddAsync(category);
+            await _context.SaveChangesAsync();
         }
 
         public async Task<List<Category>> GetAllAsync()
@@ -40,7 +38,7 @@ namespace CleanArch.Infra.Data.Repositories
         {
             var result = await _context.Categories.FirstOrDefaultAsync(x => x.Id == id);
             _context.Categories.Remove(result);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return result;     
         }
 
