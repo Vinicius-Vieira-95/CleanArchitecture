@@ -8,7 +8,7 @@ namespace CleanArch.Domain.Interface
     {
         public Task<List<Category>> GetAllAsync();
         public Task<Category> GetByIdAsync(int? id);
-        public Task<Category> Create(Category category);
+        public Task Create(Category category);
         public Task<Category> Update(Category category);
         public Task<Category> Remove(Category category);
     }

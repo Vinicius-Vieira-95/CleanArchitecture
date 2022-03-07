@@ -6,10 +6,11 @@ using AutoMapper;
 using CleanArch.Domain.DTOs;
 using FluentValidation;
 using System;
+using CleanArch.Domain.Validation;
 
 namespace CleanArch.Service.services
 {
-    public class CategoryService : ICategoryService
+    public class CategoryService : BaseValidate<Category>, ICategoryService
     {
         private readonly ICategoryRepository _repository;
         private readonly IMapper _mapper;
@@ -20,13 +21,12 @@ namespace CleanArch.Service.services
             _mapper = mapper;
         }
 
-        public async Task<CategoryDto> Create<TInputModel, TValidator>(TInputModel model)
+        public async Task Create<TInputModel>(TInputModel model)
             where TInputModel : class
-            where TValidator : AbstractValidator<Category>
         {
-            var category = _mapper.Map<Category>(model);
-            await _repository.Create(category);
-            return new CategoryDto (await _repository.GetByIdAsync(category.Id));
+            var cat = _mapper.Map<Category>(model);
+            Validate(cat, Activator.CreateInstance<CategoryValidator>());
+            await _repository.Create(cat);
         }
 
         public async Task<List<CategoryDto>> GetAllAsync()
@@ -47,10 +47,10 @@ namespace CleanArch.Service.services
             return new CategoryDto(cat);
         }
 
-        public async Task<Category> GetByIdAsync(int? id)
+        public async Task<CategoryDto> GetByIdAsync(int? id)
         {
             var category = await _repository.GetByIdAsync(id);
-            return category;
+            return new CategoryDto(category);
         }
 
         public async Task<Category> Remove(int? category)

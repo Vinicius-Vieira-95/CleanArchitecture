@@ -36,18 +36,18 @@ namespace CleanArch.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<Context>(options =>
-            {
-                options.UseNpgsql("server=localhost;Port=5432;Database=CleanArcVncdb;UserId=postgres;Password=adm");
-            });
 
             services.AddControllers()
-                .AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
-                .AddFluentValidation( x =>
+                .AddFluentValidation(x =>
                 {
                     x.RegisterValidatorsFromAssemblyContaining<CategoryValidator>();
                     x.RegisterValidatorsFromAssemblyContaining<ProductValidator>();
                 });
+
+            services.AddDbContext<Context>(options =>
+            {
+                options.UseNpgsql("server=localhost;Port=5432;Database=CleanArcVncdb;UserId=postgres;Password=adm");
+            });
 
             services.AddSingleton(new MapperConfiguration(config =>
             {
