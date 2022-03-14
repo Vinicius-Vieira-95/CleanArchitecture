@@ -24,9 +24,9 @@ namespace CleanArch.Service.services
         public async Task Create<TInputModel>(TInputModel model)
             where TInputModel : class
         {
-            var cat = _mapper.Map<Category>(model);
-            Validate(cat, Activator.CreateInstance<CategoryValidator>());
-            await _repository.Create(cat);
+            var category = _mapper.Map<Category>(model);
+            Validate(category, Activator.CreateInstance<CategoryValidator>());
+            await _repository.Create(category);
         }
 
         public async Task<List<CategoryDto>> GetAllAsync()
@@ -50,20 +50,25 @@ namespace CleanArch.Service.services
         public async Task<CategoryDto> GetByIdAsync(int? id)
         {
             var category = await _repository.GetByIdAsync(id);
+            if(category == null)
+                   return null;
             return new CategoryDto(category);
         }
 
-        public async Task<Category> Remove(int? category)
+        public async Task<CategoryDto> Remove(int? id)
         {
-            var cat = await _repository.GetByIdAsync(category.Value);
+            var cat = await _repository.GetByIdAsync(id);
             await _repository.Remove(cat);
-            return cat;
+            return new CategoryDto(cat);
         }
 
-        public async Task<Category> Update(int? category)
+        public async Task<CategoryDto> Update(CategoryDto categoryDto)
         {
-           var cat = await _repository.GetByIdAsync(category);
-           return await _repository.Update(cat);
+            var category = _mapper.Map<Category>(categoryDto);
+            Validate(category, Activator.CreateInstance<CategoryValidator>());
+            await _repository.Update(category);
+
+            return new CategoryDto(category);
         }
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using CleanArch.Domain.DTOs;
 using CleanArch.Domain.Entities;
 
 namespace CleanArch.Domain.Interface

@@ -12,7 +12,7 @@ namespace CleanArch.Domain.Interface
          public Task<CategoryDto> GetByIdAsync(int? id);
          public Task Create<TInputModel>(TInputModel model)
             where TInputModel : class;
-         public Task<Category> Update(int? category);
-         public Task<Category> Remove(int? category);
+        public Task<CategoryDto> Update(CategoryDto category);
+         public Task<CategoryDto> Remove(int? id);
     }
 }

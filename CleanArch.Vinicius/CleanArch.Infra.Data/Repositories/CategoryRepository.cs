@@ -1,4 +1,5 @@
-﻿using CleanArch.Domain.Entities;
+﻿using CleanArch.Domain.DTOs;
+using CleanArch.Domain.Entities;
 using CleanArch.Domain.Interface;
 using CleanArch.Infra.Data.Banco;
 using Microsoft.EntityFrameworkCore;

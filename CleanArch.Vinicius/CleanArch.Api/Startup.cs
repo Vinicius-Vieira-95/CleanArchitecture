@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using CleanArch.Api.Models;
+using CleanArch.Domain.DTOs;
 using CleanArch.Domain.Entities;
 using CleanArch.Domain.Interface;
 using CleanArch.Domain.Validation;
@@ -53,6 +54,7 @@ namespace CleanArch.Api
             {
                 config.CreateMap<Category, CategoryModel>();
                 config.CreateMap<CategoryModel, Category>();
+                config.CreateMap<CategoryDto, Category>();
             }).CreateMapper());
 
             services.AddScoped<ICategoryRepository, CategoryRepository>();
