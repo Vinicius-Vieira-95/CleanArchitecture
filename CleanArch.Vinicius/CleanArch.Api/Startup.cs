@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
 using CleanArch.Api.Models;
 using CleanArch.Domain.DTOs;
@@ -14,13 +10,10 @@ using CleanArch.Service.services;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
 namespace CleanArch.Api
@@ -55,10 +48,16 @@ namespace CleanArch.Api
                 config.CreateMap<Category, CategoryModel>();
                 config.CreateMap<CategoryModel, Category>();
                 config.CreateMap<CategoryDto, Category>();
+                config.CreateMap<Product, ProductDto>();
+                config.CreateMap<Product, ProductModel>();
+                config.CreateMap<ProductModel, Product>();
+
             }).CreateMapper());
 
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IProductService, ProductService>();
 
             services.AddSwaggerGen(c =>
             {

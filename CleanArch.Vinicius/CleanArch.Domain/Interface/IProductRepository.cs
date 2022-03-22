@@ -6,10 +6,10 @@ namespace CleanArch.Domain.Interface
 {
     public interface IProductRepository
     {
-         Task<IEnumerable<Product>> GetAllAsync();
-         Task<Product> GetByIdAsync(int? id);
-         Task<Product> Create( Product product);
-         Task<Product> Update(Product product);
-         Task<Product> Remove(Product product);
+        public Task<List<Product>> GetAllAsync();
+        public Task<Product> GetByIdAsync(int? id);
+        public Task Create(Product product);
+        public Task<Product> Update(Product product);
+        public Task<Product> Remove(Product product);
     }
 }

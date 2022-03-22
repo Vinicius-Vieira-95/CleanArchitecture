@@ -8,11 +8,11 @@ namespace CleanArch.Domain.Interface
 {
     public interface ICategoryService
     {
-         public Task<List<CategoryDto>> GetAllAsync();
-         public Task<CategoryDto> GetByIdAsync(int? id);
-         public Task Create<TInputModel>(TInputModel model)
+        public Task<List<CategoryDto>> GetAllAsync();
+        public Task<CategoryDto> GetByIdAsync(int? id);
+        public Task Create<TInputModel>(TInputModel model)
             where TInputModel : class;
         public Task<CategoryDto> Update(CategoryDto category);
-         public Task<CategoryDto> Remove(int? id);
+        public Task<CategoryDto> Remove(int? id);
     }
 }

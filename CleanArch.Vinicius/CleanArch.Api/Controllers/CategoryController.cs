@@ -1,9 +1,5 @@
-﻿using AutoMapper;
-using CleanArch.Api.Models;
-using CleanArch.Domain.DTOs;
-using CleanArch.Domain.Entities;
+﻿using CleanArch.Api.Models;
 using CleanArch.Domain.Interface;
-using CleanArch.Domain.Validation;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
