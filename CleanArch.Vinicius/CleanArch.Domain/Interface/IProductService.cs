@@ -11,7 +11,7 @@ namespace CleanArch.Domain.Interface
         public Task<ProductDto> GetByIdAsync(int? id);
         public Task Create<TInputModel>(TInputModel model)
             where TInputModel : class;
-        public Task<ProductDto> Update(ProductDto category);
+        public Task<ProductDto> Update(ProductDto product);
         public Task<ProductDto> Remove(int? id);
     }
 }

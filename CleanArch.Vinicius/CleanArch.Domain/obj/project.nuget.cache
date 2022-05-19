@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QLHQboDZufXRa9Z7lhYE6HwcDAKmvDQYAI6pVDoiX9BFYOh0vhahXHdlBbWtQiOBUIsPculJBP2No8uoIL3vGA==",
+  "dgSpecHash": "bDk8Q5sbAgvCXHyZwWLlJDDCcj8uHVeyX5lv4gMR/WKNU2IGmpT2jPGqH0GKvMCulVElY/XjTCovtB/cGCzGlw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pichau\\Desktop\\Treino\\CleanArchitecture\\CleanArch.Vinicius\\CleanArch.Domain\\CleanArch.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Pichau\\Desktop\\Treino\\CleanArchitecture\\cleanArch.vinicius\\CleanArch.Domain\\CleanArch.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pichau\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\fluentvalidation\\10.3.5\\fluentvalidation.10.3.5.nupkg.sha512",

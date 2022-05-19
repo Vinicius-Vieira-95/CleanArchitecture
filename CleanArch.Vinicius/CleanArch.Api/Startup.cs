@@ -48,7 +48,7 @@ namespace CleanArch.Api
                 config.CreateMap<Category, CategoryModel>();
                 config.CreateMap<CategoryModel, Category>();
                 config.CreateMap<CategoryDto, Category>();
-                config.CreateMap<Product, ProductDto>();
+                config.CreateMap<Product, ProductDto>().ReverseMap();
                 config.CreateMap<Product, ProductModel>();
                 config.CreateMap<ProductModel, Product>();
 
@@ -72,7 +72,10 @@ namespace CleanArch.Api
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "CleanArch.Api v1"));
+                app.UseSwaggerUI(c => {
+                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "CleanArch.Api v1");
+                 c.RoutePrefix = string.Empty;
+                });
             }
 
             app.UseHttpsRedirection();
