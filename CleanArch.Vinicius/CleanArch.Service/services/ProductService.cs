@@ -30,15 +30,15 @@ namespace CleanArch.Service.services
             await _repository.Create(product);
         }
 
-        public async Task<List<ProductDto>> GetAllAsync()
+        public async Task<ProductListDto> GetAllAsync()
         {   
             var products = await _repository.GetAllAsync();
 
-            List<ProductDto> list = new List<ProductDto>();
-            foreach (var product in products)
-                list.Add(new ProductDto(product));
+            // List<ProductDto> list = new List<ProductDto>();
+            // foreach (var product in products)
+            //     list.Add(new ProductDto(product));
 
-            return list;
+            return products;
         }
 
         public async Task<ProductDto> GetByIdAsync(int? id)

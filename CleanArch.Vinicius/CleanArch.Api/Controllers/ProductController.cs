@@ -43,7 +43,7 @@ namespace CleanArch.Api.Controllers
         }
 
         [HttpDelete, Route("{id}")]
-        public async Task<IActionResult> Delete([FromBody] int id)
+        public async Task<IActionResult> Delete([FromRoute] int id)
         {
             var user = await _service.GetByIdAsync(id);
             if(user == null)

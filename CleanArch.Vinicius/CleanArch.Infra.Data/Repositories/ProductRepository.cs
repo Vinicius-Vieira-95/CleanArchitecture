@@ -1,4 +1,5 @@
-﻿using CleanArch.Domain.Entities;
+﻿using CleanArch.Domain.DTOs;
+using CleanArch.Domain.Entities;
 using CleanArch.Domain.Interface;
 using CleanArch.Infra.Data.Banco;
 using Microsoft.EntityFrameworkCore;
@@ -25,15 +26,26 @@ namespace CleanArch.Infra.Data.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task<List<Product>> GetAllAsync()
+        public async Task<ProductListDto> GetAllAsync()
         {
-            return await _context.Products.ToListAsync();
+            // return await _context.Products.ToListAsync();
+            var query = _context.Products
+                .Include(x => x.Category)
+                .AsQueryable();
+            
+            var products = await getProducts(query).ToListAsync();
+
+            return new ProductListDto { list = products
+            .Select( x => new ProductDto(x)).ToList()
+            };
         }
 
         public async Task<Product> GetByIdAsync(int? id)
         {
-            var product = await _context.Products.FirstOrDefaultAsync(x => x.Id == id);
-            return product;
+            // var product = await _context.Products.FirstOrDefaultAsync(x => x.Id == id);
+            return await _context.Products
+                .Include(x => x.Category)
+                .Where(x => x.Id == id).FirstOrDefaultAsync();
         }
 
         public async Task<Product> Remove(Product product)
@@ -54,6 +66,11 @@ namespace CleanArch.Infra.Data.Repositories
             update.CategoryId = product.CategoryId;
             await _context.SaveChangesAsync();
             return update;
+        }
+
+        private IQueryable<Product> getProducts(IQueryable<Product> query)
+        {
+            return query.OrderBy(x => x.Id);
         }
     }
 }

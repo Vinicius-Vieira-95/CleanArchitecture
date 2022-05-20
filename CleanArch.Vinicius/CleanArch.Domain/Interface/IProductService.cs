@@ -7,7 +7,7 @@ namespace CleanArch.Domain.Interface
 {
     public interface IProductService
     {
-        public Task<List<ProductDto>> GetAllAsync();
+        public Task<ProductListDto> GetAllAsync();
         public Task<ProductDto> GetByIdAsync(int? id);
         public Task Create<TInputModel>(TInputModel model)
             where TInputModel : class;

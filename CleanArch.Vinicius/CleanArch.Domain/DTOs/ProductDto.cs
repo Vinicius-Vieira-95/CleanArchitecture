@@ -14,7 +14,7 @@ namespace CleanArch.Domain.DTOs
         public string Description { get; set; }
         public decimal Price { get; set; }
         public int Stock { get; set; }
-        public int CategoryId { get; set; }
+        public string CategoryName {get; set; }
 
         public ProductDto(Product product)
         {
@@ -23,7 +23,7 @@ namespace CleanArch.Domain.DTOs
             Description = product.Description;
             Price = product.Price;
             Stock = product.Stock;
-            CategoryId = product.CategoryId;
+            CategoryName = product.Category.Name;
         }
     }
 }
